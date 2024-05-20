@@ -1,0 +1,109 @@
+/* src/NavBar.css */
+.burger-menu {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+    padding: 0;
+  }
+  
+  .burger-menu .line {
+    width: 2rem;
+    height: 0.25rem;
+    background: var(--text-color);
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+  }
+  
+  .line1.open {
+    transform: rotate(45deg);
+  }
+  
+  .line2.open {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  
+  .line3.open {
+    transform: rotate(-45deg);
+  }
+  
+  .theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--nav-background-color);
+    color: var(--nav-text-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .nav-bar {
+    background-color: var(--nav-background-color);
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .nav-bar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-bar nav ul li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+  
+  .nav-bar nav ul li a {
+    color: var(--nav-text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    padding: 0.5rem 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .nav-bar nav ul li a:hover,
+  .nav-bar nav ul li a.active {
+    background-color: #0056b3;
+  }
+  /* src/NavBar.css */
+.theme-toggle {
+    padding: 10px; /* Adjust the padding as needed */
+  }
+  
+  .theme-toggle .MuiFormControlLabel-root {
+    margin-left: 0; /* Remove default margin if needed */
+  }
+  
+  .theme-toggle .MuiSwitch-root {
+    padding: 8px; /* Adjust the padding inside the switch component */
+  }
+  
+  

@@ -1,0 +1,28 @@
+/* src/themes.css */
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --nav-background-color: #007bff;
+    --nav-text-color: #ffffff;
+  }
+  
+  [data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --nav-background-color: #333333;
+    --nav-text-color: #ffffff;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .nav-bar {
+    background-color: var(--nav-background-color);
+  }
+  
+  .nav-bar nav ul li a {
+    color: var(--nav-text-color);
+  }
+  

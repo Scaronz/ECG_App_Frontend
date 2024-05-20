@@ -1,0 +1,26 @@
+/* src/Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--header-bg-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+.header-content {
+  /* Style for additional header content */
+}
+
+:root {
+  --header-bg-color: #fff;
+}
+
+[data-theme='dark'] {
+  --header-bg-color: #333;
+}
