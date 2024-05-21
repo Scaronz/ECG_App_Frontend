@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding-top: 50px;
+  }
+  
+  .header {
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .upload-section,
+  .predict-section {
+    margin-bottom: 20px;
+  }
+  
+  .file-info,
+  .prediction-label {
+    margin-top: 10px;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .button-container button {
+    margin-bottom: 10px;
+  }
+  .upload-section{
+    .button {
+        width: 47px;
+        height: 19px;
+        cursor: pointer;
+        text-indent: -9999px;
+        border: none;
+        background-image: url(http://www.hudson-realestate.com/us/images/uploadButton.gif);
+    }
+  }
