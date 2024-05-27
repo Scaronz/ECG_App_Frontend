@@ -26,3 +26,24 @@
     color: var(--nav-text-color);
   }
   
+[data-theme="dark"] .MuiSelect-root,
+[data-theme="dark"] .MuiMenuItem-root {
+  color: var(--text-color);
+  background-color: black; /* Change this to black */
+}
+
+[data-theme="dark"] .MuiInputLabel-root{
+  color: var(--text-color);
+  background: none;
+}
+[data-theme="dark"] .model-selection-section .form-control .MuiSelect-root {
+  color: white;
+}
+[data-theme="dark"] .MuiInputLabel-root:hover {
+  color: #000000;
+}
+
+.button-container button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}

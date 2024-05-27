@@ -13,9 +13,9 @@
 }
 
 .upload-section,
-.predict-section,
-.model-selection-section {
+.predict-section {
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .file-info,
@@ -33,6 +33,16 @@
   margin-bottom: 10px;
 }
 
-.form-control {
-  min-width: 200px;
+.upload-section .button {
+  width: 47px;
+  height: 19px;
+  cursor: pointer;
+  text-indent: -9999px;
+  border: none;
+  background-image: url(http://www.hudson-realestate.com/us/images/uploadButton.gif);
+}
+
+
+.model-selection-section .form-control {
+  width: 200px; /* Adjust the width as needed */
 }
