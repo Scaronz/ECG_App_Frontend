@@ -106,7 +106,12 @@ const NavBar = () => {
                 <ul>
                   <li>
                     <NavLink to="/" exact activeClassName="active" onClick={handleToggle}>
-                      Home
+                      Predict
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/TrainModelSetting" activeClassName="active" onClick={handleToggle}>
+                      Train Model
                     </NavLink>
                   </li>
                   <li>
@@ -124,6 +129,7 @@ const NavBar = () => {
                       Contact
                     </NavLink>
                   </li>
+
                 </ul>
               </nav>
             </animated.div>

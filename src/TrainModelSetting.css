@@ -1,0 +1,29 @@
+.container {
+    margin-top: 20px;
+  }
+  
+  .paper {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .upload-section {
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    margin-top: 10px;
+  }
+  
+  .file-info {
+    margin-top: 10px;
+  }
+  
+  .parameters-section {
+    margin-bottom: 20px;
+  }
+  
+  .predict-button {
+    margin-top: 20px;
+  }
+  

@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import TrainModelSetting from './pages/TrainModelSetting';
 import './App.css';
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/TrainModelSetting" element={<TrainModelSetting />} />
       </Routes>
     </Router>
   );
