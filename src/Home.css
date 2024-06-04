@@ -18,6 +18,12 @@
   margin-top: 20px;
 }
 
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .file-info,
 .prediction-label {
   margin-top: 10px;
@@ -41,14 +47,14 @@
   border: none;
   background-image: url(http://www.hudson-realestate.com/us/images/uploadButton.gif);
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
 }
-
 
 .model-selection-section .form-control {
   width: 200px; /* Adjust the width as needed */
 }
+
 .upload-section .file-info {
   margin-top: 10px;
   font-size: 14px;
