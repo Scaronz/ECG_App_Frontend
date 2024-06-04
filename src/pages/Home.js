@@ -29,11 +29,12 @@ const Home = () => {
   return (
     <div className="container">
       <h1 className="header">ECG Classifier</h1>
+      <h2 className="header2">Upload your ECG file</h2>
       <div className="upload-section">
         <InputFileUpload onFileChange={handleFileUpload} />
         {uploadedFile && (
           <div className="file-info">
-            Uploaded File: {uploadedFile.name}
+            Uploaded ECG File: {uploadedFile.name}
           </div>
         )}
       </div>
@@ -54,7 +55,13 @@ const Home = () => {
       </div>
       <div className="predict-section">
         <div className="button-container">
-          <Button variant="contained" onClick={handlePredict} disabled={!selectedModel}>Predict</Button>
+          <Button
+            variant="contained"
+            onClick={handlePredict}
+            disabled={!uploadedFile || !selectedModel}
+          >
+            Predict
+          </Button>
           {predictionLabel && (
             <div className="prediction-label">
               Prediction: {predictionLabel}
